@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="SegmentClock/App.axaml" value="SegmentClock/SegmentClock.csproj" />
+        <entry key="SegmentClock/Colons.axaml" value="SegmentClock/SegmentClock.csproj" />
+        <entry key="SegmentClock/MainWindow.axaml" value="SegmentClock/SegmentClock.csproj" />
+        <entry key="SegmentClock/Styles1.axaml" value="SegmentClock/SegmentClock.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

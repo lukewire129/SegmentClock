@@ -1,0 +1,212 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="200" Background="#252525">
+            <SevenSegment Tag="0"/>
+        </Border>
+    </Design.PreviewWith>
+
+    <Style Selector="SevenSegment">
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Height" Value="200"/>
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Viewbox Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                    <Viewbox.RenderTransform>
+                        <ScaleTransform ScaleY="-1"/>
+                    </Viewbox.RenderTransform>
+                    <Grid>
+                        <Path x:Name="seg1"
+                            Data="M808 2689 c-35 -27 -65 -54 -66 -60 -6 -16 112 -169 133 -173 11 -3 180 -7 377 -10 l356 -5 111 85 111 86 -18 30 c-9 16 -30 41 -45 56 l-28 27 -222 6 c-122 4 -317 7 -434 8 l-212 1 -63 -51z"
+                            Fill="#3a3a3a" />
+                        <Path x:Name="seg2"
+                              Data="M1775 2459 c-49 -39 -93 -78 -97 -87 -11 -24 -148 -687 -148 -713 0 -22 88 -137 106 -138 18 -1 151 118 163 147 24 61 152 656 154 719 2 42 -3 59 -28 95 -17 23 -37 44 -45 45 -8 1 -55 -29 -105 -68z"
+                              Fill="#3a3a3a" />
+                        <Path x:Name="seg3"
+                              Data="M1524 1318 l-89 -75 -79 -360 -79 -360 57 -77 c32 -42 63 -76 69 -76 23 0 129 92 142 123 13 33 148 638 160 717 6 46 -5 72 -73 159 l-19 23 -89 -74z"
+                              Fill="#3a3a3a" />
+                        <Path x:Name="seg4"
+                              Data="M345 399 c-49 -38 -93 -73 -98 -78 -12 -12 20 -65 63 -106 l31 -30 410 2 410 2 42 25 c23 14 60 41 81 60 l39 34 -53 73 c-29 41 -58 77 -64 81 -6 4 -182 8 -391 7 l-380 0 -90 -70z"
+                              Fill="#3a3a3a" />
+                        <Path x:Name="seg5"
+                              Data="M337 1335 c-42 -36 -80 -73 -86 -82 -12 -25 -142 -673 -144 -722 -1 -30 6 -51 28 -82 17 -24 35 -44 41 -46 11 -4 178 120 200 148 6 8 44 173 84 367 l72 353 -28 37 c-35 47 -76 92 -84 92 -4 0 -41 -29 -83 -65z"
+                              Fill="#3a3a3a" />
+                        <Path x:Name="seg6"
+                              Data="M581 2510 c-33 -27 -62 -54 -65 -59 -11 -17 -156 -743 -156 -778 0 -24 12 -50 41 -88 23 -30 45 -55 49 -55 15 0 169 131 174 148 7 23 90 404 126 581 l30 143 -56 79 c-30 43 -62 79 -69 79 -8 0 -41 -22 -74 -50z"
+                              Fill="#3a3a3a" />
+                        <Path x:Name="seg7"
+                              Data="M615 1534 c-109 -86 -105 -75 -55 -139 24 -31 52 -63 63 -70 16 -11 90 -14 384 -15 l364 0 84 70 c46 38 86 73 88 78 3 4 -17 35 -44 70 l-49 62 -383 0 -382 0 -70 -56z"
+                              Fill="#3a3a3a" />
+                    </Grid>
+                </Viewbox>
+            </ControlTemplate>
+        </Setter>
+        <Style Selector="^[Tag=1]">
+            <Style Selector="^ /template/ Path#seg2">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg3">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+        </Style>
+        <Style Selector="^[Tag=2]">
+            <Style Selector="^ /template/ Path#seg1">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg2">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg4">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg5">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg7">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+        </Style>
+        <Style Selector="^[Tag=3]">
+            <Style Selector="^ /template/ Path#seg1">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg2">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg3">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg4">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg7">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+        </Style>
+        <Style Selector="^[Tag=4]">
+            <Style Selector="^ /template/ Path#seg2">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg3">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg6">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg7">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+        </Style>
+        <Style Selector="^[Tag=5]">
+            <Style Selector="^ /template/ Path#seg1">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg3">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg4">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg6">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg7">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+        </Style>
+        <Style Selector="^[Tag=6]">
+            <Style Selector="^ /template/ Path#seg1">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg3">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg4">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg5">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg6">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg7">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+        </Style>
+        <Style Selector="^[Tag=7]">
+            <Style Selector="^ /template/ Path#seg1">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg2">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg3">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg6">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+        </Style>
+        <Style Selector="^[Tag=8]">
+            <Style Selector="^ /template/ Path#seg1">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg2">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg3">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg4">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg5">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg6">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg7">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+        </Style>
+        <Style Selector="^[Tag=9]">
+            <Style Selector="^ /template/ Path#seg1">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg2">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg3">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg6">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg7">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+        </Style>
+        <Style Selector="^[Tag=0]">
+            <Style Selector="^ /template/ Path#seg1">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg2">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg3">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg4">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg5">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+            <Style Selector="^ /template/ Path#seg6">
+                <Setter Property="Fill" Value="OrangeRed"/>
+            </Style>
+        </Style>
+    </Style>
+</Styles>

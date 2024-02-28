@@ -1,0 +1,40 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20" Background="#252525">
+            <StackPanel Orientation="Horizontal">
+                <SevenSegment Tag="0" />
+                <SevenSegment Tag="0" />
+                <Colons />
+                <SevenSegment Tag="0" />
+                <SevenSegment Tag="0" />
+            </StackPanel>
+        </Border>
+    </Design.PreviewWith>
+    <Style Selector="Ellipse.Style1">
+        <Setter Property="Width" Value="30" />
+        <Setter Property="Height" Value="30" />
+        <Setter Property="Fill" Value="#3a3a3a"/>
+        <Style.Animations>
+            <Animation Duration="0:0:1" Delay="0:0:1" IterationCount="INFINITE"> 
+                <KeyFrame Cue="0%">
+                    <Setter Property="Fill" Value="OrangeRed"/>
+                </KeyFrame>
+                <KeyFrame Cue="100%">
+                    <Setter Property="Fill" Value="#3a3a3a"/>
+                </KeyFrame>
+            </Animation>
+        </Style.Animations>
+    </Style>
+
+    <Style Selector="Colons">
+        <Setter Property="Template">
+            <ControlTemplate>
+                <StackPanel Orientation="Vertical" Spacing="50" VerticalAlignment="Center" Margin="10,0">
+                    <Ellipse Classes="Style1" Margin="20,0,0,0"/>
+                    <Ellipse Classes="Style1" />
+                </StackPanel>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+</Styles>
